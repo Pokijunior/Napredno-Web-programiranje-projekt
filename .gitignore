@@ -1,0 +1,4 @@
+src/.env
+docker-data/
+lego_database.sql
+src/*.xml

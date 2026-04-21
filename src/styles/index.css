@@ -1,0 +1,90 @@
+main {
+    padding-bottom: 20px;
+}
+
+.main-picture {
+    padding: 0;
+}
+
+figure {
+    margin: 10px;
+}
+
+nav {
+    background-image: url("https://media.istockphoto.com/id/458665309/photo/lego-house.jpg?s=612x612&w=0&k=20&c=t5TvKg2bgYIDK4mX-CddiCvVd3rd5th2FeZNBhB8TrM=");
+    background-size: 70%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cars-picture {
+    width: 100%;
+    box-shadow: 5px 5px 50px yellow;
+    border-radius: 5px;
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    font-style: italic;
+}
+
+.main-text {
+    color: wheat;
+    padding: 10px;
+    text-align: justify;
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+@media only screen and (min-width: 480px) {
+    nav {
+        background-image: none;
+    }
+
+    .main-picture {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .main-box {
+        display: flex;
+        flex-direction: row;
+        vertical-align: top;
+    }
+
+    figure {
+        margin: 0 10px;
+        width: 50%;
+    }
+
+    figcaption {
+        margin-bottom: 50px;
+    }
+
+    .main-text {
+        margin: 0 10px;
+        padding-top: 0;
+        width: 50%;
+    }    
+}

@@ -1,0 +1,102 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+}
+
+nav {
+    background-image: url("https://previews.123rf.com/images/rosinka79/rosinka792103/rosinka79210300016/165009117-tambov-russian-federation-february-14-2021-lego-speed-champions-a-lot-of-lego-race-cars-on-a-white.jpg");
+    background-size: 100%;
+}
+
+.car {
+    display: flex;
+    margin: 10px;
+    box-shadow: 5px 5px 50px yellow;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.car-name {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.img-lambo {
+    width: 200px;
+    border-radius: 5px;
+    padding: 34px 0;
+}
+
+.car-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    color: wheat;
+}
+
+p {
+    margin-right: 15px;
+}
+
+
+@media only screen and (min-width: 480px) {
+    nav {
+        background-image: none;
+    }
+
+    main {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .car {
+        display: block;
+        justify-content: center;
+        box-shadow: 5px 5px 50px yellow;
+        border-radius: 5px;
+
+    }
+
+    .car-img {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .img {
+        box-shadow: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    main {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img, .img-lambo {
+        width: 350px
+    }
+
+    .img-lambo {
+        padding: 50px 0;
+    }
+
+    .car-name {
+        font-size: 25px;
+    }
+}
+

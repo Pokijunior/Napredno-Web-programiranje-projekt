@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("https://awesomewallpapers.files.wordpress.com/2010/09/lego-red-1440x900.jpg");
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+a {
+    padding: 2px;
+}
+
+@media only screen and (min-width: 480px) {
+    main {
+        width: 100%;
+    }
+
+    .title {
+        margin-top: 30px;        
+    }
+}

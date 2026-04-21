@@ -1,0 +1,122 @@
+header {
+    background-color: rgb(227, 0, 11);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-picture {
+    width: 80px;
+    background-color: white;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(227, 0, 11);
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+        padding: 0;
+        margin-right: 20px;
+    }
+
+    .home {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://media.istockphoto.com/id/458665309/photo/lego-house.jpg?s=612x612&w=0&k=20&c=t5TvKg2bgYIDK4mX-CddiCvVd3rd5th2FeZNBhB8TrM=");
+        background-size: 150px;
+    }
+
+    .cars {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://previews.123rf.com/images/rosinka79/rosinka792103/rosinka79210300016/165009117-tambov-russian-federation-february-14-2021-lego-speed-champions-a-lot-of-lego-race-cars-on-a-white.jpg");
+        background-size: 200px;
+    }
+
+    .alternative-builds {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://greatyellowbrick.co.za/cdn/shop/products/lego-speed-champions-lamborghini-countach-76908_001_720x@2x.jpg?v=1645528786");
+        background-size: 200px;
+    }
+
+    .rebrickable {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://merch.rebrickable.com/cdn/shop/files/title7j-large.png?v=1664775037");
+        background-size: 200px;
+    }
+
+    .contact {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://www.lego.com/cdn/cs/set/assets/blt13f0aa3c7c7c5c73/Sophia_StandingWithPhone_V7_Shadowless_lowres.png");
+        background-size: 120px;
+    }
+
+    .about {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/1640074349869-CM0TK349RWHX1KY7K0T4/Wrapped+LEGO+Present+Box+with+Snowflake+Surprise+Instructions+%2825%29.jpg?format=1000w");
+        background-size: 200px;
+    }
+
+    .login {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://i.pinimg.com/550x/32/4d/fe/324dfef2bed802d191078e679b5cc847.jpg");
+        background-size: 120px;
+    }
+
+    .register {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://minifigs.me/cdn/shop/files/handyperson-open-smile-eyelashes-head.jpg?v=1692705769&width=1946");
+        background-size: 120px;
+    }
+
+    .admin {
+        margin: 0px;
+        padding: 40px 35px;
+        background-image: url("https://i.etsystatic.com/31956167/r/il/db52b5/4267717091/il_570xN.4267717091_l1xs.jpg");
+        background-size: 150px;
+    }
+    
+
+    a:hover {
+        box-shadow: 3px 5px 4px yellow;
+        border-radius: 5px;
+    }
+
+    main {
+        padding-top: 50px;
+        position: absolute;
+    }
+}
+

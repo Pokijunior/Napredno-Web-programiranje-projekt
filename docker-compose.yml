@@ -1,0 +1,38 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: lego_web
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8080:80"
+    networks:
+      - lego-net
+    command: >
+      sh -c "docker-php-ext-install mysqli && apache2-foreground"
+
+  db:
+    image: mysql:8.0
+    container_name: lego_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: lego_baza
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_USER: lego_user
+      MYSQL_PASSWORD: lego_password
+    networks:
+      - lego-net
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: lego_pma
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+    networks:
+      - lego-net
+
+networks:
+  lego-net:
+    driver: bridge

@@ -1,0 +1,90 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+}
+
+nav {
+    background-image: url("https://merch.rebrickable.com/cdn/shop/files/title7j-large.png?v=1664775037");
+    background-size: 100%;
+}
+
+.car {
+    display: flex;
+    margin: 10px;
+    box-shadow: 5px 5px 50px yellow;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.car-img {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.car-info {
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-name {
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 480px) {
+    nav {
+        background-image: none;
+    }
+
+    main {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .car {
+        display: block;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .car-img {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .car-info {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    main {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img {
+        width: 350px;
+    }
+
+    .car-name {
+        font-size: 20px;
+    }
+}
