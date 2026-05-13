@@ -30,7 +30,7 @@ session_start();
     <main>
     <div class="note">
         <div class="info">
-            <p class="info-text"><strong>Info!</strong> Click on the Lego set and it will show you his alternative builds</p>
+            <p class="info-text"><strong>Info!</strong> Tap any car to see what else you can build.</p>
         </div>
     </div>
 
